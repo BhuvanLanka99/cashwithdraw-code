@@ -15,31 +15,29 @@ class CashWithdrawal extends Component {
     const {amount} = this.state
     return (
       <div className="app-container">
-        <div className="bg-container">
-          <div className="card-container">
-            <div className="profile">
-              <p className="initial">S</p>
-              <p className="name">Sarah Williams</p>
-            </div>
-            <div className="balance-cont">
-              <p className="balance">Your Balance</p>
-              <div className="rupees-cont">
-                <p className="rupees">{amount}</p>
-                <p className="rupees-text">In Rupees</p>
-              </div>
-            </div>
-            <p className="withdraw-text">Withdraw</p>
-            <p className="sum-rupees">CHOOSE SUM(IN RUPEES)</p>
-            <ul className="denomination-list">
-              {denominationsList.map(each => (
-                <DenominationItem
-                  eachValue={each}
-                  key={each.id}
-                  updateBalance={this.updateBalance}
-                />
-              ))}
-            </ul>
+        <div className="card-container">
+          <div className="profile">
+            <p className="initial">S</p>
+            <p className="name">Sarah Williams</p>
           </div>
+          <div className="balance-cont">
+            <p className="balance">Your Balance</p>
+            <div className="rupees-cont">
+              <p className="rupees">{amount}</p>
+              <p className="rupees-text">In Rupees</p>
+            </div>
+          </div>
+          <p className="withdraw-text">Withdraw</p>
+          <p className="sum-rupees">CHOOSE SUM(IN RUPEES)</p>
+          <ul className="denomination-list">
+            {denominationsList.map(each => (
+              <DenominationItem
+                eachValue={each}
+                key={each.id}
+                updateBalance={this.updateBalance}
+              />
+            ))}
+          </ul>
         </div>
       </div>
     )

@@ -2,23 +2,24 @@
 .app-container {
   display: flex;
   justify-content: center;
-}
-
-.bg-container {
-  display: flex;
-  justify-content: center;
+  height: 100vh;
   align-items: center;
-  min-height: 100vh;
-  width: 70%;
-  box-shadow: 0px 4px 16px 0px #bfbfbf;
 }
 
 .card-container {
   height: 80%;
-  width: 50%;
+  width: 80%;
   border-radius: 15px;
   background-color: #150b3e;
   padding: 25px;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 726px) {
+  .card-container {
+    width: 50%;
+    max-width: 422px;
+  }
 }
 
 .profile {
