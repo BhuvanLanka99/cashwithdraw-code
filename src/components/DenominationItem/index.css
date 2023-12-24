@@ -1,0 +1,22 @@
+/* Write your CSS here */
+.list-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.button {
+  height: 30px;
+  width: 200px;
+  background-color: #382f5a;
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #d4d2db;
+}
